@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import { isAdmin } from '@/lib/auth'
-import { supabaseAdmin } from '@/lib/supabase'
+import { isAdmin } from '../../../../lib/auth'
+import { supabaseAdmin } from '../../../../lib/supabase'
 
 export async function POST(req: Request){
   if(!(await isAdmin())) return NextResponse.json({ error:'unauthorized' }, { status:401 })
