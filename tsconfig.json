@@ -11,8 +11,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-
-    // 👇 QUESTE DUE RIGHE SONO LA CHIAVE:
     "baseUrl": ".",
     "paths": {
       "@/*": ["*"]
